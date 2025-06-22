@@ -1,0 +1,138 @@
+# Microsoft Outlook Setup Guide
+
+## Purpose
+
+This guide provides step-by-step instructions for setting up Microsoft Outlook on Windows, macOS, iOS, and Android, ensuring access to work email, calendars, and contacts.
+
+---
+
+## When to Use This Guide
+
+Use this guide when:
+
+- Setting up a new device  
+- Reinstalling or reconfiguring Outlook  
+- Assisting users who’ve changed their password or email credentials  
+- Configuring mobile access for on-the-go use  
+
+---
+
+## Requirements
+
+- Valid work email address (e.g., `firstname.lastname@company.com`)  
+- Network password (domain credentials)  
+- Stable internet connection  
+- *(Optional)* Multi-factor authentication (MFA) device/app  
+- **Mobile only**: Outlook app downloaded from App Store or Google Play  
+
+---
+
+## Set Up Outlook on Windows (Office 365 / Exchange)
+
+### Step 1: Open Outlook
+
+- Click **Start** > search for and open **Outlook**  
+- If this is the first time, setup will begin automatically  
+- If not, go to **File > Add Account**
+
+### Step 2: Enter Email & Password
+
+- Type your **full email address**, then click **Connect**  
+- Enter your **network password**  
+- If prompted, approve **Multi-Factor Authentication (MFA)**
+
+### Step 3: Complete Setup
+
+- Click **Finish** when prompted  
+- Outlook will begin syncing your **inbox, calendar, and contacts**  
+- You’re ready to use Outlook!
+
+---
+
+## Set Up Outlook on macOS
+
+### Step 1: Open Outlook
+
+- Launch **Outlook for Mac**  
+- If prompted, select **Exchange** or **Microsoft 365**  
+- If Outlook is already open, go to **Tools > Accounts > + (Add Account)**
+
+### Step 2: Enter Email Address
+
+- Enter your **full email address**, then click **Continue**  
+- Sign in with your **network password** and authenticate via MFA if prompted  
+
+### Step 3: Allow Permissions
+
+- Accept any permissions or prompts related to **calendar/contacts sync**  
+- Your mailbox will begin syncing.
+
+---
+
+## Set Up Outlook on iPhone/iPad (iOS)
+
+### Step 1: Install the Outlook App
+
+- Open the **App Store**  
+- Search for **Microsoft Outlook** and install it  
+
+### Step 2: Add Account
+
+- Open **Outlook**  
+- Tap **Add Account**  
+- Enter your **work email address**, then tap **Add Account**
+
+### Step 3: Sign In
+
+- Enter your **password** when prompted  
+- Approve any **MFA prompt** if required  
+
+### Step 4: Grant Permissions
+
+- Tap **Allow** to sync your **calendar, notifications, and contacts**  
+- You’ll now see your **inbox, calendar, and folders**.
+
+---
+
+## Set Up Outlook on Android
+
+### Step 1: Install the Outlook App
+
+- Open the **Google Play Store**  
+- Search for and install **Microsoft Outlook**
+
+### Step 2: Add Your Account
+
+- Open **Outlook**  
+- Tap **Get Started**, then enter your **email address**
+
+### Step 3: Sign In
+
+- Enter your **password** and approve MFA  
+- Tap **Allow** when prompted for permissions  
+- ✅ You can now access your work email on your **Android device**.
+
+---
+
+## Test Access After Setup
+
+After setup is complete, verify:
+
+- Emails are **sending/receiving**  
+- **Calendar events** are visible and syncing  
+- You can **search your mailbox**  
+- **Contacts** populate in the Outlook app  
+
+---
+
+## Troubleshooting Tips
+
+| **Issue**                       | **Suggested Fix**                                         |
+|----------------------------------|------------------------------------------------------------|
+| Login fails or email won't sync | Verify credentials, reset password, ensure internet       |
+| MFA prompt doesn’t appear       | Check MFA app settings or re-register device              |
+| Calendar not syncing on mobile  | Reinstall Outlook, re-enable sync permissions             |
+| Duplicate account warning       | Remove and re-add account via Outlook settings            |
+| App crashes or lags             | Update Outlook and device OS to latest versions           |
+
+---

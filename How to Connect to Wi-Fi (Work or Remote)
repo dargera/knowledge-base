@@ -1,0 +1,114 @@
+# Wi-Fi Connection Guide – Windows & macOS
+
+## Purpose
+
+This guide explains how to connect a laptop or desktop computer to a Wi-Fi network, whether you're working on-site (using corporate Wi-Fi) or remotely (using home or public Wi-Fi).
+
+---
+
+## When to Use This Guide
+
+Use this guide if:
+
+- You're setting up a new device or laptop  
+- You’ve recently changed locations or networks  
+- You're having issues connecting to Wi-Fi or need to switch networks  
+
+---
+
+## Requirements
+
+Before you begin:
+
+- Ensure Wi-Fi is enabled on your device  
+- Know your Wi-Fi network name (SSID) and password  
+- For corporate Wi-Fi, you may need your domain credentials  
+
+---
+
+## Connecting to Wi-Fi on Windows 10/11
+
+### Step 1: Open Network Menu
+
+- Click the **network icon** in the bottom-right system tray  
+- Select the **Wi-Fi tab** (if not already showing)
+
+### Step 2: Select Your Network
+
+- Click on your Wi-Fi name (e.g., `Company_WiFi`, `HomeNetwork`, etc.)
+
+### Step 3: Enter Credentials
+
+- If prompted, enter:  
+  - **Password** (for home or public Wi-Fi)  
+  - **Username & Password** (for enterprise Wi-Fi)  
+- Click **Connect**  
+- *(Optional)* Check **“Connect automatically”** for future logins
+
+- You should now be connected. A **checkmark** or **Wi-Fi icon** will confirm.
+
+---
+
+## Connecting to Wi-Fi on macOS
+
+### Step 1: Open Wi-Fi Settings
+
+- Click the **Wi-Fi icon** in the top-right menu bar  
+- Ensure **Wi-Fi is turned ON**
+
+### Step 2: Choose Your Network
+
+- Select the correct network name from the list
+
+### Step 3: Authenticate
+
+- Enter the Wi-Fi **password** or your **work credentials** if required  
+- Click **Join**  
+
+- Once connected, the Wi-Fi icon will show **full bars**
+
+---
+
+## Connecting to Corporate Wi-Fi (Enterprise/802.1X)
+
+If your workplace uses secure enterprise Wi-Fi:
+
+- The network name may be something like `CorpNet` or `SecureWiFi`  
+- You may need to authenticate using:  
+  - **Username:** `domain\your.username` or `your.email@company.com`  
+  - **Password:** Your domain/network password  
+
+- On some systems, you may need to accept a certificate — click **Yes** or **Connect** when prompted
+
+---
+
+## Connecting to Home or Public Wi-Fi
+
+- Follow the same steps above (Windows/macOS)  
+- Use the network password printed on your **router** or provided by the **venue**  
+- **Avoid using public Wi-Fi** for work without VPN protection  
+
+> **Tip:** Always use a VPN when accessing company resources on unsecured networks.
+
+---
+
+## Testing Your Wi-Fi Connection
+
+Once connected:
+
+- Open a web browser and visit a site like **www.google.com**  
+- Try accessing internal tools (email, Teams, VPN, etc.)
+
+---
+
+## Troubleshooting Tips
+
+| **Issue**                     | **Try This**                                                                 |
+|------------------------------|------------------------------------------------------------------------------|
+| Network not showing           | Ensure Wi-Fi is turned on (check physical switch or Fn key)                  |
+| Can't connect to the network  | Restart the Wi-Fi adapter or device                                          |
+| Incorrect password error      | Double-check case sensitivity or try “Forget network” and rejoin             |
+| Connected but no internet     | Run `ipconfig /release` and `ipconfig /renew` *(Windows)* or restart router |
+| Slower speeds or dropouts     | Move closer to the router, switch frequency (2.4GHz vs 5GHz)                 |
+
+---

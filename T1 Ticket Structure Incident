@@ -1,26 +1,22 @@
-Tier 1 Jira Ticket Structure Incident
-Basic Information to Collect on the Call
-Jira Field
-What to Ask or Record
-Reporter
-Caller’s name (or select from directory if synced with Jira)
-Summary
-A short, clear issue title (e.g., “Cannot connect to VPN”)
-Description
-Use call notes template below
-Priority
-Ask: “Is this preventing you from working?” or follow severity guide
-Assignee
-Leave unassigned or assign to L2 if escalated
-Labels/Category
-Use tags like vpn, login, printer, email, etc.
-Attachments
-Ask user to email or upload screenshots/logs
+# Tier 1 Jira Ticket Structure Incident
 
-Description Field (Paste This Template Into Jira)
+## Basic Information to Collect on the Call
 
+| Jira Field    | What to Ask or Record                                  |
+|--------------|--------------------------------------------------------|
+| **Reporter**  | Caller’s name (or select from directory if synced with Jira) |
+| **Summary**   | A short, clear issue title (e.g., “Cannot connect to VPN”) |
+| **Description** | Use call notes template below                         |
+| **Priority**  | Ask: “Is this preventing you from working?” or follow severity guide |
+| **Assignee**  | Leave unassigned or assign to L2 if escalated          |
+| **Labels/Category** | Use tags like vpn, login, printer, email, etc.     |
+| **Attachments** | Ask user to email or upload screenshots/logs          |
 
-Basic Information
+---
+
+## Description Field (Paste This Template Into Jira)
+
+**Basic Information**  
 Caller Name: [Full Name]  
 Contact Info: [Phone / Email / Teams Handle]  
 Department/Location: [e.g., Sales – Vancouver Office]  
@@ -28,52 +24,48 @@ Device Type: [Laptop / Desktop / Phone / VDI]
 Operating System: [Windows / macOS / iOS / Android / Other]  
 Asset Tag (if available):  [e.g., C123456]  
 
-Issue Summary (User’s Words):  
+**Issue Summary (User’s Words):**  
 [“I can’t print anything from my laptop.”]
 
-Detailed Description:  
-**What happened:**  
-**When it started:**  
-**Recurring or one-time?:**  
-**Affected software/system:**  
-**Is anyone else affected?:**
+**Detailed Description:**  
+- **What happened:**  
+- **When it started:**  
+- **Recurring or one-time?:**  
+- **Affected software/system:**  
+- **Is anyone else affected?:**
 
-Error Message (if any): 
+**Error Message (if any):**  
 [Paste exact error or note: “No message shown”]  
 [Attach screenshot if available]
 
-Impact Level: 
-[ ] Low – Minor inconvenience  
-[ ] Medium – Some work blocked  
-[ ] High – User unable to work  
+**Impact Level:**  
+- [ ] Low – Minor inconvenience  
+- [ ] Medium – Some work blocked  
+- [ ] High – User unable to work  
 
-Troubleshooting Done (L1):
-[ ] Rebooted device  
-[ ] Verified internet connection  
-[ ] Checked credentials  
-[ ] Restarted app/software  
-[ ] Reinstalled or updated app  
-[ ] Tested alternate device  
-[ ] Checked permissions  
-[ ] Collected logs/screenshots  
-[ ] Other: `__________`
+**Troubleshooting Done (L1):**  
+- [ ] Rebooted device  
+- [ ] Verified internet connection  
+- [ ] Checked credentials  
+- [ ] Restarted app/software  
+- [ ] Reinstalled or updated app  
+- [ ] Tested alternate device  
+- [ ] Checked permissions  
+- [ ] Collected logs/screenshots  
+- [ ] Other: `__________`
 
-Next Steps / Notes for Escalation:  
+**Next Steps / Notes for Escalation:**  
 [e.g., "User will try again after reboot. Escalate to L2 if not resolved by EOD."]
- Quick Troubleshooting Reference (L1)
-Category
-Quick Checks (Do While on Call)
-Login Issues
-Reset password, check lockout, confirm domain/account
-VPN Issues
-Check Wi-Fi, restart VPN client, try different network
-Printer Issues
-Restart printer, check cable/network, reinstall device
-Email Issues
-Try Outlook and Webmail, restart app, check mailbox size
-Performance
-Reboot device, close apps, check CPU/RAM via Task Manager
-Software/App
-Restart, check for updates, reinstall, verify license/login details
 
+---
 
+## Quick Troubleshooting Reference (L1)
+
+| Category       | Quick Checks (Do While on Call)                      |
+|----------------|-----------------------------------------------------|
+| **Login Issues**| Reset password, check lockout, confirm domain/account |
+| **VPN Issues**  | Check Wi-Fi, restart VPN client, try different network |
+| **Printer Issues** | Restart printer, check cable/network, reinstall device |
+| **Email Issues** | Try Outlook and Webmail, restart app, check mailbox size |
+| **Performance** | Reboot device, close apps, check CPU/RAM via Task Manager |
+| **Software/App**| Restart, check for updates, reinstall, verify license/login details |

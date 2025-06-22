@@ -1,0 +1,80 @@
+# Compatibility Mode (IE Mode) – Support Guide
+
+## Purpose
+
+Some legacy web applications or internal portals may not display properly in modern browsers due to outdated code. This guide explains how to use **Compatibility Mode**, primarily through **Internet Explorer (IE) Mode** in **Microsoft Edge**, which is now the standard method for viewing legacy sites.
+
+---
+
+## When to Use This Guide
+
+Use Compatibility Mode when a user reports that:
+
+- A legacy app doesn't render correctly in Chrome, Edge, or Firefox  
+- Buttons or dropdowns don’t work as expected  
+- They require IE-only functionality (e.g., ActiveX, old intranet apps)
+
+---
+
+## Supported Browsers and Compatibility Options
+
+| **Browser**       | **Compatibility Option**                                |
+|-------------------|----------------------------------------------------------|
+| Microsoft Edge     | Internet Explorer Mode *(recommended for enterprise)*   |
+| Google Chrome      | No native compatibility mode; use IE or Edge IE Mode    |
+| Mozilla Firefox    | No compatibility mode support                           |
+| Safari             | No compatibility mode support                           |
+| Internet Explorer  | Deprecated – use Edge with IE Mode                      |
+
+---
+
+## Enable Compatibility Mode in Microsoft Edge (IE Mode)
+
+### One-Time Manual Use (Per User)
+
+1. Open **Microsoft Edge**  
+2. Go to the website that is not displaying correctly  
+3. Click the **three-dot menu (⋯)** in the top-right corner  
+4. Select **Reload in Internet Explorer mode**  
+5. *(Optional)* Toggle **"Open this page in IE mode next time"** if available  
+6. A small **Internet Explorer icon** will appear in the address bar, confirming IE mode is active  
+
+> **Note:** This option is only available if your organization or system policy has enabled IE Mode.
+
+---
+
+## Set a Site to Always Open in IE Mode (Enterprise or Admin Use)
+
+1. Open **Edge** and go to `edge://settings/defaultbrowser`  
+2. Under **"Internet Explorer Compatibility"**, ensure:  
+   - “**Allow sites to be reloaded in Internet Explorer mode**” is set to **Allow**  
+3. Use `edge://compat` or **Group Policy** to define a **Site List**:  
+   - Host the XML file of URLs to be opened in IE Mode  
+   - Deploy via **Group Policy**, **Intune**, or **Microsoft Endpoint Configuration Manager (MECM)**
+
+---
+
+## Notes for Support Staff
+
+### Group Policy Location:
+
+### IE Mode Requirements:
+
+- Windows 10/11  
+- Microsoft Edge (latest version)  
+- Site list hosted internally or using **Enterprise Mode Site List Manager (EMSLM)**
+
+### Common Legacy Use Cases:
+
+- Internal SharePoint 2010 sites  
+- Java applets, ActiveX, or Silverlight-based portals  
+- Legacy CRM or HR platforms  
+
+---
+
+## Browser Does Not Support Compatibility Mode?
+
+If using **Chrome**, **Firefox**, or **Safari**:
+
+- Recommend switching to **Microsoft Edge** and using **IE Mode** as described above  
+- **Do not** attempt registry edits or user-agent hacks unless **approved by your organization's security team**

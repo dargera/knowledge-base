@@ -1,0 +1,121 @@
+# T3 Ticket Structure – Enterprise / Infrastructure Request Template
+
+## Basic Information to Confirm / Finalize
+
+| Jira Field       | What to Confirm or Record                                                                 |
+|------------------|-------------------------------------------------------------------------------------------|
+| **Reporter**     | Original requester or team (often Tier 2, security, or management)                        |
+| **Summary**      | Highly specific title (e.g., “Request New DNS Record for Intranet Web App”)              |
+| **Description**  | Include technical justification, scope, risk, and change control notes (see below)       |
+| **Priority**     | Validate based on system criticality, production impact, and SLA                         |
+| **Assignee**     | Assign to appropriate SME/team (Network, Infrastructure, Security, IAM, Cloud, etc.)     |
+| **Labels/Category** | Functional tags like firewall-request, GPO-change, azure-resource, IAM                 |
+| **Attachments**  | Include diagrams, change forms, config files, approval chain, logs, and any architecture |
+
+---
+
+## Description Field
+
+**Request Initiated By:** [Name or Department]  
+**Escalated From:** [Tier 2 / Security / Change Board / Other Team]  
+**Contact Info:** [Email / Teams Channel / Distribution List]  
+**Impacted Systems/Services:** [e.g., Exchange, Internal DNS, Domain Controllers, Azure VM]  
+
+---
+
+### Request Type
+
+- [ ] DNS / Domain Change  
+- [ ] Firewall Rule / Port Opening  
+- [ ] VM / Server Provisioning  
+- [ ] Group Policy (GPO) Modification  
+- [ ] Cloud Resource Deployment (Azure/AWS)  
+- [ ] Service Account Creation / Rotation  
+- [ ] IAM Role or RBAC Change  
+- [ ] Scheduled Production Change  
+- [ ] Database Configuration / Access  
+- [ ] Storage/Cluster Modification  
+- [ ] Other: `__________`
+
+---
+
+### Business / Technical Justification
+
+- **Why is this needed?:**  
+- **What business function does it support?:**  
+- **Is this related to a project or audit requirement?:**
+
+---
+
+### Scope of Impact
+
+- [ ] Single user  
+- [ ] Department  
+- [ ] Region / Site  
+- [ ] Enterprise-wide  
+- **Production impact?:** Yes / No  
+- **Downtime required?:** Yes / No  
+- **Maintenance window proposed?:** [Date/Time]
+
+---
+
+### Risk Assessment / Dependencies
+
+- [ ] Reviewed dependency systems (AD, DHCP, DB, etc.)  
+- [ ] Assessed impact to business operations  
+- [ ] Identified fallback or rollback steps  
+- [ ] Created backup/snapshot plan  
+- [ ] Other: `__________`
+
+---
+
+### Approvals / Change Control
+
+- [ ] Manager approval (attached)  
+- [ ] CAB or Change Request ID: `__________`  
+- [ ] Security / Compliance sign-off  
+- [ ] Documentation updated / planned  
+
+---
+
+### Tier 3 Actions Taken
+
+- [ ] Reviewed system requirements  
+- [ ] Validated configuration/scripts  
+- [ ] Coordinated with infrastructure/security/DBA  
+- [ ] Performed the change in staging/test first  
+- [ ] Documented rollback plan  
+- [ ] Logged changes for audit  
+- [ ] Other: `__________`
+
+---
+
+### Status
+
+- [ ] Planning / Pending Approval  
+- [ ] Scheduled  
+- [ ] In Progress  
+- [ ] Completed – Validated  
+- [ ] Deferred / Denied  
+- [ ] Escalated to Vendor / External Partner  
+
+---
+
+### Notes / Technical Summary
+
+[Add any config diffs, CLI commands, firewall rules, DNS entries, permissions paths, or monitoring alerts.]
+
+---
+
+## Tier 3 Service Request Categories & Toolsets
+
+| Category              | Typical Tier 3 Tools & Actions                                                            |
+|-----------------------|-------------------------------------------------------------------------------------------|
+| **Firewall / Networking** | Palo Alto, Cisco ASA, FortiGate, Meraki, subnet rules, VLAN/DHCP config            |
+| **DNS / Domain**      | Internal DNS servers, Azure DNS, Route 53, BIND, TTL adjustments                         |
+| **VM / Server**       | Hyper-V, vSphere, Azure Portal, Ansible, Terraform                                       |
+| **IAM / RBAC**        | Azure AD roles, LDAP groups, AWS IAM, OAuth app permissions                              |
+| **GPO / AD Config**   | Group Policy Management Console (GPMC), gpresult, OU permissions                         |
+| **Cloud Resources**   | Azure Resource Groups, AWS EC2/EBS/S3, monitoring integration                            |
+| **Database**          | SQL Server Management Studio, PostgreSQL CLI, role-based access control                  |
+| **Security / Compliance** | SIEM (Splunk/LogRhythm), audit logs, identity vaults (CyberArk, HashiCorp)         |

@@ -1,0 +1,106 @@
+# Printer Setup and Troubleshooting
+
+## Purpose  
+This document outlines the standard procedures for setting up network printers and resolving common printer issues, including offline status, print queue stalls, and driver failures.
+
+## Audience  
+- Tier 1 / Tier 2 IT Support  
+- System Administrators  
+- Field Technicians  
+
+## When to Use This Guide  
+Use this guide when:  
+- A new printer is being installed or reinstalled  
+- A user cannot print to an existing network printer  
+- Print jobs are stuck in the queue or fail to print  
+- Printer drivers need to be repaired or updated  
+
+---
+
+## Section 1: Network Printer Installation (Windows)
+
+### Step 1: Get Printer Info  
+Obtain:  
+- Printer IP address or hostname  
+- Model name (e.g., HP LaserJet MFP M428)  
+- Driver package or universal driver  
+
+### Step 2: Install via IP (Manual Method)  
+1. Open **Settings → Devices → Printers & Scanners**  
+2. Click **Add a printer or scanner**  
+3. Click **The printer that I want isn’t listed**  
+4. Choose **Add a printer using TCP/IP address or hostname**  
+5. Enter:  
+   - Device type: Autodetect  
+   - Hostname/IP address: `[e.g., 10.1.1.25]`  
+6. If prompted, install the driver manually from file or select from the list  
+7. Name the printer appropriately (e.g., `Finance_HP_M428`)  
+8. Print a test page to confirm  
+
+### Step 3: Install via Print Server (If Applicable)  
+1. Open Run (Win + R) and type:  
+   `\\printserver.domain.local`  
+2. Browse to the appropriate printer queue  
+3. Double-click the printer to install  
+
+---
+
+## Section 2: Common Printer Troubleshooting
+
+### Printer Not Responding / Offline
+
+| Check                         | Action                                         |
+|-------------------------------|------------------------------------------------|
+| Is the printer powered on?     | Restart or power cycle the printer             |
+| Is it connected to the network?| Ping the printer IP; reconnect the network cable or Wi-Fi |
+| Is the printer status "Offline"? | Right-click printer → **Use Printer Online**  |
+| Is it reachable?               | Ping or web-access the IP: `http://[IP]:80`    |
+
+### Print Jobs Stuck in Queue  
+1. Open **Control Panel → Devices and Printers**  
+2. Right-click the printer → **See what's printing**  
+3. Cancel all jobs  
+4. Restart Print Spooler Service:  
+   - Open **Services.msc**  
+   - Locate **Print Spooler**  
+   - Click **Restart**  
+
+### Reinstall / Update Printer Drivers  
+1. Go to **Settings → Devices → Printers & Scanners**  
+2. Remove the problematic printer  
+3. Download the latest driver from the manufacturer's website  
+4. Install the driver manually before adding the printer again  
+5. Use the **Add Printer** wizard to re-add using the updated driver  
+
+> 🔧 **Tip:** For HP printers, consider using the HP Universal Print Driver (PCL6 or PS)
+
+### Advanced Diagnostics
+
+| Tool                        | Use                                   |
+|-----------------------------|-------------------------------------|
+| HP Print and Scan Doctor    | Windows utility for HP devices       |
+| Web Interface (printer IP)  | View logs, network config, queue status |
+| Event Viewer (PrintService logs) | Trace spooler or driver errors      |
+| SNMP Status Tools           | Monitor toner, errors, or paper jams remotely |
+
+---
+
+## Section 3: Mac Printer Setup (Optional)  
+1. Go to **System Settings → Printers & Scanners**  
+2. Click **+** to add new printer  
+3. Choose **IP** tab, enter IP address  
+4. Select **Generic PCL** or specific driver  
+5. Name and save  
+
+---
+
+## Notes for IT Staff  
+- Always verify location, model, and driver compatibility before setup  
+- Tag and track printers in the asset system if shared/networked  
+- Prioritize installing secure print release options if available  
+
+---
+
+## Support Escalation  
+- If hardware is faulty, escalate to Facilities or the Print Vendor  
+- For persistent spooler issues, escalate to Tier 2 / SysAdmin  

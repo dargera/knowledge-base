@@ -1,0 +1,112 @@
+# Clearing Browser Cache – Support Guide
+
+## Purpose
+
+This document provides step-by-step instructions for clearing the web browser cache to resolve issues such as website loading errors, outdated content, login failures, or application glitches. Applies to **Chrome, Edge, Firefox, and Safari**.
+
+---
+
+## When to Use This Guide
+
+Clear a user's browser cache if they are experiencing:
+
+- Pages not displaying correctly  
+- Missing buttons or layout errors  
+- Repeated login prompts or expired sessions  
+- Web apps failing to load or function correctly  
+
+---
+
+## Instructions by Browser
+
+### Google Chrome
+
+**Steps:**
+
+1. Open Chrome.  
+2. Click the **three-dot menu** (top-right corner).  
+3. Go to **More Tools > Clear browsing data**.  
+4. Under the **Basic** tab:  
+   - **Time range:** Select **All time**  
+   - Check:  
+     - Cached images and files  
+     - Browsing history *(optional)*  
+     - Cookies and other site data *(if necessary)*  
+5. Click **Clear data**.  
+6. **Restart Chrome** and re-test the website.  
+
+---
+
+### Microsoft Edge
+
+**Steps:**
+
+1. Open Edge.  
+2. Click the **three-dot menu** (top-right corner).  
+3. Go to **Settings > Privacy, search, and services**.  
+4. Under **Clear browsing data**, click **Choose what to clear**.  
+5. **Time range:** Select **All time**.  
+6. Check:  
+   - Cached images and files  
+   - Cookies and other site data *(optional)*  
+   - Browsing history *(optional)*  
+7. Click **Clear now**.  
+8. **Restart Edge** and re-test.  
+
+---
+
+### Mozilla Firefox
+
+**Steps:**
+
+1. Open Firefox.  
+2. Click the **three-line menu** (top-right corner).  
+3. Go to **Settings > Privacy & Security**.  
+4. Scroll to **Cookies and Site Data**.  
+5. Click **Clear Data…**  
+6. Check:  
+   - Cached Web Content  
+   - Cookies and Site Data *(if necessary)*  
+7. Click **Clear**.  
+8. **Restart Firefox** and re-test.  
+
+---
+
+### Safari (macOS)
+
+**Steps:**
+
+1. Open Safari.  
+2. Click **Safari** in the top menu > **Preferences**.  
+3. Go to the **Advanced** tab.  
+4. Enable **Show Develop menu in the menu bar**.  
+5. Close Preferences.  
+6. From the **Develop** menu, select **Empty Caches**.  
+7. **Restart Safari** and re-test.  
+
+---
+
+## Notes for Support Staff
+
+- Instruct users to **save their work** and **log out** of essential apps before clearing the cache.  
+- If a web issue persists, also try:  
+  - Clearing cookies *(can log the user out of sites)*  
+  - Using **Incognito/Private mode** for testing  
+  - **Flushing DNS** or checking **host file** entries  
+  - Confirming the **latest browser version** is installed  
+
+---
+
+## Keyboard Shortcuts to Clear Browser Cache
+
+| **Browser**       | **Windows/Linux Shortcut**      | **macOS Shortcut**                    |
+|-------------------|----------------------------------|----------------------------------------|
+| Google Chrome     | Ctrl + Shift + Delete           | ⌘ Command + Shift + Delete            |
+| Microsoft Edge    | Ctrl + Shift + Delete           | ⌘ Command + Shift + Delete            |
+| Mozilla Firefox   | Ctrl + Shift + Delete           | ⌘ Command + Shift + Delete            |
+| Safari            | N/A (no direct shortcut)        | ⌘ Command + Option + E *(after enabling Develop menu)* |
+
+**Notes:**
+
+- In **Safari**, `⌘ + Option + E` clears the cache **instantly with no confirmation**.  
+- For **Chrome, Edge, and Firefox**, the shortcut opens the **Clear Browsing Data** menu to choose what to clear.

@@ -1,0 +1,82 @@
+# Common Tier 1 Escalation Criteria
+
+## Purpose  
+This document defines standard Tier 1 escalation triggers, ensuring prompt and appropriate handoff to Tier 2 support. It reduces resolution delays, ensures SLA compliance, and avoids over-troubleshooting beyond Tier 1 scope.
+
+## Audience  
+- Tier 1 Helpdesk / IT Support  
+- Service Desk Analysts  
+- IT Managers overseeing ticket triage  
+
+## When to Use This Guide  
+Use this guide:  
+- When Tier 1 troubleshooting does not resolve the issue  
+- When the issue is out of Tier 1 scope or permissions  
+- When a technical escalation is required due to complexity, system-level changes, or risk  
+
+---
+
+## General Escalation Triggers
+
+| Criteria                     | Escalate To Tier 2 If...                                |
+|------------------------------|---------------------------------------------------------|
+| Issue Unresolved After Standard Steps | L1 steps exhausted and user still blocked             |
+| Permissions Required          | Task needs elevated rights (e.g., AD group changes, registry edits) |
+| System/Application Issue      | Impacting multiple users or appears to be service-wide  |
+| Repeat or Recurring Tickets   | Same issue persists despite attempted fixes             |
+| System Errors                | System-level error messages, BSOD, or logs beyond Tier 1 training |
+| Performance Issues           | Not resolved with reboot, task manager cleanup, or single app reinstall |
+| Email Issues (Advanced)      | Outlook PST repair, delegate access failures, mailbox corruption |
+| Hardware Failures            | Physical damage, BIOS/firmware issues, or needs vendor service |
+| Network Issues              | VLAN, DNS, DHCP, or switch-specific issues not tied to user endpoint |
+| Server Resource Requests     | File share permissions, server access, drive mapping changes |
+| New Software or Tools        | Unapproved or custom apps needing Tier 2 vetting or packaging |
+| Installation Fails or Errors | When MSI/MST troubleshooting is needed                   |
+| User Data Recovery           | Backup restore, PST recovery, OneDrive/SharePoint recovery |
+| MFA or SSO Failures          | Not fixable through reset or standard MFA re-enroll steps |
+| Citrix/RDP/VPN Connection Errors | Not resolved with standard Tier 1 connectivity steps   |
+
+---
+
+## Tier 1 “Do Not Attempt” List  
+*(Always escalate)*
+
+| Task                         | Reason                                             |
+|------------------------------|----------------------------------------------------|
+| Changing AD security group policies | Requires audit/log tracking & admin privileges   |
+| Email restore from server (Exchange) | Requires backup or admin console access          |
+| Complex scripting or GPO troubleshooting | Out of Tier 1 training and authority            |
+| Device encryption/decryption | Risk of data loss; handled by Tier 2/3             |
+| BIOS/UEFI updates            | Potentially system-breaking                         |
+| Server changes              | Always Tier 2+                                     |
+| App packaging or SCCM deployment | Needs Tier 2 engineer or deployment team          |
+| Data recovery from failed drives | Escalate to Tier 2 or vendor support              |
+
+---
+
+## How to Escalate (Best Practices)
+
+- **Document Everything clearly in the ticket:**  
+  - What troubleshooting was done  
+  - Relevant screenshots or error logs  
+  - Impact level and urgency  
+  - Affected user(s), system(s), and location(s)  
+
+- **Tag or Assign to Tier 2 Queue**  
+- Use the appropriate Jira category or escalation label  
+- Use internal handoff templates, if required  
+
+- **Communicate with User:**  
+  - Let them know it’s being escalated  
+  - Provide expected follow-up time, if available  
+
+- **Flag Urgent Issues:**  
+  - Use high priority label if it blocks multiple users or critical operations  
+  - Notify Tier 2 by Teams/Slack/email if response is time-sensitive  
+
+---
+
+## Notes for Tier 1 Staff  
+-  If you’re unsure whether to escalate, it’s better to ask or escalate with notes  
+-  Avoid “pass-the-ticket” behavior — always perform basic troubleshooting first  
+-  Keep the ticket updated — Tier 2 relies on your notes for fast triage  

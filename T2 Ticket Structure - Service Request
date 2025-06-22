@@ -1,0 +1,98 @@
+# T2 Service Request – Ticket Structure
+
+## Basic Information to Confirm / Update
+
+| Jira Field      | What to Confirm or Record                                           |
+|-----------------|---------------------------------------------------------------------|
+| **Reporter**    | Confirm requester's name and contact info (user or proxy)          |
+| **Summary**     | Precise and technical title (e.g., “Request for SCCM Software Push – Visio 2021”) |
+| **Description** | Full request details, approvals, and Tier 2 actions (see template below) |
+| **Priority**    | Confirm urgency and validate with team guidelines                  |
+| **Assignee**    | Assign to the appropriate Tier 2 fulfillment queue or specialist   |
+| **Labels/Category** | Use functional tags like software-deploy, permissions, shared-mailbox |
+| **Attachments** | Ensure approvals, screenshots, forms, or logs are uploaded         |
+
+---
+
+## Description Field
+
+**Requested By:** [User or Proxy Name]  
+**Contact Info:** [Email / Phone / Teams]  
+**Department/Location:** [e.g., Sales – Calgary Office]  
+**Escalated From (Tier 1):** [Name, if applicable]  
+
+---
+
+### Request Type
+
+- [ ] Software Installation or SCCM Deployment  
+- [ ] Permission Elevation / Local Admin Rights  
+- [ ] Shared Mailbox / Calendar Configuration  
+- [ ] Department-wide Configuration Change  
+- [ ] Printer or Network Device Setup  
+- [ ] Application Whitelisting  
+- [ ] Other: `__________`
+
+---
+
+### Details of Request
+
+- **What is being requested?:**  
+- **Target system or user(s):**  
+- **Reason for the request:**  
+- **Urgency or deadline:**  
+- **Approval attached?:** Yes / No  
+- **Has this been done before for this user/system?:** Yes / No  
+
+---
+
+### System/Platform (if applicable)
+
+- [ ] Windows / macOS  
+- [ ] Active Directory  
+- [ ] Azure / O365  
+- [ ] SCCM / Intune  
+- [ ] Internal App / SaaS  
+- [ ] File Server / Shared Drive  
+
+---
+
+### Initial Tier 2 Actions Taken
+
+- [ ] Reviewed attached approval  
+- [ ] Verified user eligibility or role  
+- [ ] Confirmed software/package availability  
+- [ ] Checked for existing configuration  
+- [ ] Coordinated with app/system owner  
+- [ ] Created deployment group / test case  
+- [ ] Submitted change request (if required)  
+- [ ] Other: `__________`
+
+---
+
+### Status
+
+- [ ] In Progress  
+- [ ] Awaiting Info/Approval  
+- [ ] Pending Scheduled Task  
+- [ ] Completed – User Notified  
+- [ ] Escalated to Tier 3 / Infra Team  
+
+---
+
+### Notes / Next Steps
+
+[e.g., “Visio deployment queued in SCCM – user will receive install within 4 hours. Awaiting confirmation.”]
+
+---
+
+## Tier 2 Service Request Examples & Fulfillment Areas
+
+| Request Type            | Tier 2 Tools / Systems                                       |
+|-------------------------|-------------------------------------------------------------|
+| **Software Deployment** | SCCM, Intune, Chocolatey, install scripts                   |
+| **Permissions**         | Active Directory, File Share ACLs, Azure RBAC, Exchange Admin Center |
+| **Shared Mailboxes/Calendars** | O365 Admin Portal, PowerShell, Admin Console         |
+| **Printer or Device Setup** | Print server console, Group Policy, driver installation |
+| **Application Whitelisting** | AppLocker, Windows Defender policies, Endpoint config |
+| **Configuration Adjustments** | Registry edits, GPO changes, local config policies   |

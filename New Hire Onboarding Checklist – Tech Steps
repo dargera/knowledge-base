@@ -1,0 +1,76 @@
+# New Hire Onboarding Checklist – Tech Steps
+
+## Purpose
+This document outlines the technical setup steps IT must complete when onboarding a new employee. It ensures every new hire is fully equipped with hardware, system access, security configurations, and support resources on Day 1.
+
+## Audience
+- IT Support Technicians (Tier 1 & Tier 2)  
+- System Administrators  
+- IT Managers  
+
+## When to Use This Document
+- A new employee is starting (full-time, part-time, contractor)  
+- A returning employee is being re-hired  
+- A role change requires provisioning new access/hardware  
+
+---
+
+## Pre-Onboarding (1–5 Days Before Start)
+
+| Task                 | Description                                        | Completed |
+|----------------------|--------------------------------------------------|-----------|
+| Ticket Received      | HR/Manager submits new hire request via Jira/Service Portal | ☐         |
+| Create AD/Email Account | Use naming convention (e.g., first.last); assign to correct OU | ☐         |
+| Assign Licenses       | Microsoft 365 / Google Workspace / VPN / Software | ☐         |
+| Group Memberships     | Add to security/distribution groups (e.g., Dept-Finance, AllStaff) | ☐         |
+| Provision Device      | Assign laptop/desktop; record asset tag           | ☐         |
+| Install Standard Image| Deploy company OS image with baseline apps (SCCM, Autopilot, etc.) | ☐         |
+| Install Role-Specific Software | Finance tools, design apps, engineering IDEs, etc. | ☐         |
+| Create Email Signature Template | Optional – send to new hire                 | ☐         |
+| Prepare Welcome Kit   | Include hardware, charger, accessories, quick-start guide | ☐         |
+| Ship/Arrange Pickup   | Schedule pickup or shipping to home/office location | ☐         |
+
+---
+
+## Day 1 Setup (With New Hire)
+
+| Task                   | Description                                          | Completed |
+|------------------------|------------------------------------------------------|-----------|
+| Set Temporary Password & MFA | Walk through password change and MFA enrollment    | ☐         |
+| Connect to Network/VPN | Verify access to shared drives, apps, Outlook/Teams, etc. | ☐         |
+| Schedule Orientation Support | 15–30 min walk-through with IT to answer questions | ☐         |
+| Confirm Device Configuration | Screen resolution, printer access, desktop icons, etc. | ☐         |
+| Validate Outlook Access | Confirm calendar sync, Teams chats, email send/receive | ☐         |
+| Set Up Backup Tools    | OneDrive, Google Drive, or internal file sync as applicable | ☐         |
+| Verify Security Tools Active | AV/EDR, endpoint management, disk encryption       | ☐         |
+
+---
+
+## Optional Setup (Based on Role/Location)
+
+| Task                      | When Applicable                               | Completed |
+|---------------------------|-----------------------------------------------|-----------|
+| Set Up VoIP/Desk Phone     | If user is in office or call-heavy role       | ☐         |
+| Access to Shared Mailboxes / Calendars | As per team request                      | ☐         |
+| Access to Internal Portals or Tools | HRIS, Confluence, Jira, ERP, etc.          | ☐         |
+| Printer Setup             | Local or network printer configuration         | ☐         |
+| Enroll Mobile Device      | MDM (Intune, Jamf, etc.)                        | ☐         |
+| Security/Compliance Training | Add to LMS or email training links             | ☐         |
+
+---
+
+## Post-Onboarding Follow-Up (Day 2–7)
+
+| Task                   | Description                                          | Completed |
+|------------------------|------------------------------------------------------|-----------|
+| Check-In Email         | Confirm everything is working and remind them of IT support channels | ☐         |
+| Log Asset Assignment   | Record in asset tracking system (e.g., Snipe-IT, spreadsheet) | ☐         |
+| Decommission Unused Accounts | Remove or flag accounts provisioned in error       | ☐         |
+| Survey or Feedback     | Send brief onboarding experience feedback form       | ☐         |
+
+---
+
+## Notes for IT Staff
+- Always verify new hire's job title and department to provision the correct access.  
+- Keep HR and the hiring manager in the loop with progress/status updates.  
+- For VIPs or executives, escalate to Tier 2/3 for white-glove setup.

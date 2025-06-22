@@ -1,0 +1,61 @@
+# How to Report an Email as Phishing
+
+## Purpose
+This guide explains how to properly report a phishing email to the IT or Security team, helping protect the organization from email-based threats like credential theft, malware, and business email compromise (BEC).
+
+## When to Use This Guide
+Use this guide if you receive an email that:
+- Looks suspicious or unexpected  
+- Asks for personal information, passwords, or payment details  
+- Contains unusual links or attachments  
+- Claims to be urgent but comes from an unrecognized sender  
+
+## What Is Phishing?
+Phishing is a type of cyberattack where attackers impersonate trusted sources to trick users into revealing sensitive information or installing malware.
+
+---
+
+## How to Report Phishing Emails (By Platform)
+
+### Microsoft Outlook (Desktop App)
+1. Open the suspicious email, but **do not** click any links or open attachments.  
+2. On the toolbar, click the **Report Phishing** button (if enabled).  
+3. Alternatively, click **More actions** (three dots) → **Report** → **Phishing**.  
+4. Confirm when prompted.  
+5. If the button isn’t available, forward the email to:  
+   `phishing@yourcompany.com` or your IT security inbox, or follow company policy.
+
+### Outlook on the Web (Office 365 / OWA)
+1. Open the suspicious email.  
+2. Click the three-dot menu (...) at the top right of the message pane.  
+3. Select **Report** → **Phishing**.  
+4. Confirm submission to Microsoft and IT.
+
+### Outlook Mobile App (iOS/Android)
+1. Tap the email to open it.  
+2. Tap the three-dot menu (...) in the upper-right corner.  
+3. Tap **Report Phishing** or forward the email to `phishing@yourcompany.com` or follow company policy.
+
+### If Using Gmail (Personal or GSuite)
+1. Open the email.  
+2. Click the three-dot menu in the upper-right of the message.  
+3. Select **Report phishing**.  
+4. Click **Report** to send to Google and flag it for review.  
+5. Forward a copy to IT for internal tracking if required or follow company policy.
+
+---
+
+## Best Practices When Handling Suspicious Emails
+
+| Do                          | Don’t                       |
+|-----------------------------|-----------------------------|
+| Report it immediately        | Don’t click suspicious links |
+| Hover over links to preview URLs | Don’t open unexpected attachments |
+| Check sender's full email address | Don’t reply or give information |
+
+---
+
+## What Happens After You Report It
+- The Security team reviews the reported message.  
+- If malicious, they remove it from inboxes company-wide.  
+- Investigation may include IP blocks, password resets, or user alerts.  

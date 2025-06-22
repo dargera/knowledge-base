@@ -1,0 +1,102 @@
+# Remote Access Guide
+
+## Purpose
+This guide explains how to use approved remote access tools to securely connect to internal systems, desktops, or applications from off-site or work-from-home locations.
+
+## When to Use This Guide
+Use this guide if you:
+- Need to access a company workstation or network while off-site
+- Are supporting users remotely via screen sharing or control
+- Are required to access published apps or desktops (Citrix)
+
+## Requirements
+Before using remote access tools, ensure you have:
+- Work device or authorized personal computer
+- Stable internet connection
+- Valid network credentials (domain account)
+- (Optional) VPN connection (if required by your org)
+- MFA token/app for secure sign-in
+
+---
+
+## Option 1: Using Citrix Workspace
+Citrix is typically used to access virtual desktops or published apps from any device.
+
+### Step 1: Install Citrix Workspace
+- Download from: https://www.citrix.com/downloads/workspace-app
+- Install the application using default settings
+
+### Step 2: Launch Citrix
+- Open Citrix Workspace
+- Enter the workspace URL provided by IT (e.g., https://workspace.company.com)
+- Log in using your domain credentials (and complete MFA if prompted)
+
+### Step 3: Open Apps or Desktops
+- Once logged in, click on the published app (e.g., Outlook, SAP) or desktop icon
+- The session will launch in a new window
+- You are now connected to your virtual work environment.
+
+---
+
+## Option 2: Using Remote Desktop (RDP)
+RDP is used to connect directly to your office PC from a remote location.
+
+### Step 1: Enable RDP on Office PC (IT Only)
+On the office machine:
+- Right-click This PC > Properties > Remote Desktop Settings
+- Turn ON "Allow remote connections to this computer"
+
+### Step 2: Get the PC Name or IP
+From the office PC, open Command Prompt and run:
+hostname
+ipconfig
+
+### Step 3: Connect from Remote PC
+- On your home device, press Windows + R, type `mstsc`, and hit Enter
+- In the Computer field, enter: `PCName.domain.local` or the IP address
+- Click Connect
+- Enter your work username and password
+- You now have full access to your office machine.
+
+**Note:** A VPN connection may be required before starting RDP.
+
+---
+
+## Option 3: Using AnyDesk (Remote Support Tool)
+AnyDesk is used for remote assistance or quick support sessions.
+
+### Step 1: Download and Run AnyDesk
+- Download from: https://anydesk.com
+- Run the app — installation is optional (can be run as a portable app)
+
+### Step 2: Share Your AnyDesk ID
+- Open the app to see your unique AnyDesk address (e.g., 123 456 789)
+- Share this ID with the technician helping you
+
+### Step 3: Accept Incoming Session
+- When prompted, click Accept to allow remote control
+- You can choose whether to allow file transfer, clipboard, or view-only access
+- IT can now remotely view or control your screen to troubleshoot or assist.
+
+**Security Tip:** Only accept remote sessions from trusted IT staff.
+
+---
+
+## Testing Access
+After setup:
+- Try accessing internal drives or apps
+- Verify you can open email, file shares, or ERP systems
+- Ensure remote sessions remain stable for at least 10 minutes
+
+---
+
+## Troubleshooting Tips
+
+| Issue                   | Suggested Fix                                            |
+|-------------------------|----------------------------------------------------------|
+| Can’t connect via RDP    | Ensure VPN is connected; check PC is powered on and RDP is enabled |
+| Citrix won’t launch apps | Clear browser cache or Citrix Workspace cache; re-authenticate |
+| AnyDesk session disconnects | Check firewall or unstable Wi-Fi                      |
+| Slow performance        | Use wired internet, close local background apps, reduce resolution |
+| RDP credentials rejected | Use correct format: domain\username                      |
+

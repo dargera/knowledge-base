@@ -1,0 +1,108 @@
+Basic Information to Confirm / Finalize
+Jira Field
+What to Confirm or Record
+Reporter
+Confirm the correct user or proxy escalation chain
+Summary
+Technical and specific (e.g., “VPN Profile Dropping due to Split-Tunnel Conflict”)
+Description
+Final diagnosis, root cause, remediation (see template below)
+Priority
+Validate against system-level impact and operational criticality
+Assignee
+Assign to self, admin team lead, or appropriate engineer
+Labels/Category
+Use functional tags like ActiveDirectory, DNS, StorageCluster, GPO
+Attachments
+Include full log exports, config snippets, change records, and diagrams
+
+
+Description Field 
+Escalated By (Tier 2): [Name]  
+Original Reporter / Affected User: [Full Name or System Name]  
+Location / Scope of Impact: [User-level / Dept / Site-wide / Global]  
+System/Environment: [On-prem / Azure / Citrix / VDI / Internal App]  
+Asset/Hostname: [e.g., VDI-GW01 / SERVER-FS03 / Exchange01]  
+---
+Issue Summary:  
+[e.g., “Users disconnected from Citrix sessions after 10 minutes of idle time.”]
+---
+Technical Findings:  
+Observed behavior: 
+Log analysis summary:
+Systems/services affected:  
+Date/time first occurrence: 
+System uptime or performance metrics:  
+Correlated alerts/events:  
+
+---
+
+Logs / Diagnostics:  
+[ ] System logs attached  
+[ ] Event Viewer errors  
+[ ] Packet trace / pcap  
+[ ] App crash logs  
+[ ] Resource metrics (CPU, RAM, I/O)  
+[ ] Config comparison/diff  
+[ ] Screenshots/diagrams  
+---
+Troubleshooting & Deep Diagnostics Performed: 
+[ ] Reviewed system/application logs  
+[ ] Validated registry/group policy  
+[ ] Checked AD/DNS/LDAP resolution  
+[ ] Verified storage availability/performance  
+[ ] Ran scripts/tools (e.g., dcdiag, netstat, iperf)  
+[ ] Recreated issue in lab/test env  
+[ ] Confirmed network layer config  
+[ ] Engaged vendor or internal SME  
+[ ] Reviewed recent patches/updates/CMDB  
+---
+Root Cause Analysis (RCA):  
+> e.g., *Idle timeout GPO policy applied at the wrong OU level caused Citrix sessions to terminate.*
+---
+Resolution / Fix Applied: 
+[ ] Config change  
+[ ] Patch applied  
+[ ] DNS/GPO/AD object corrected  
+[ ] Restarted/redeployed service  
+[ ] Rollback executed  
+[ ] Other: `__________`
+---
+Preventative Measures / Postmortem Recommendations:
+[ ] GPO cleanup and standardization  
+[ ] Monitoring alert added  
+[ ] Change control requirement  
+[ ] Documentation updated  
+[ ] Scheduled future maintenance  
+[ ] Other: `__________`
+---
+Status:  
+[ ] Resolved and validated  
+[ ] Monitoring for recurrence  
+[ ] Pending final user confirmation  
+[ ] Handed off to the infrastructure/project team  
+---
+Final Notes:
+[Use for additional RCA evidence, documentation links, known issues, or monitoring metrics]
+
+Tier 3 System-Level Areas & Tools
+Category
+Tier 3 Tools / Tasks
+Active Directory
+dcdiag, replication checks, FSMO roles, GPO audits
+Network
+netstat, tracert, firewall rule trace, routing table, VLAN verification
+Virtualization
+Hypervisor logs, VM config, snapshot rollback, resource limits
+Email Systems
+Mail flow tracking, transport logs, DAG state, mailbox corruption scan
+Storage/Drives
+IOPS analysis, disk health, SAN connectivity, SMB share permissions
+Security
+Audit logs, SIEM traces, endpoint protection logs
+Cloud Services
+Azure/AWS logs, IAM roles, policy evaluation, automation failure
+Scripting/Automation
+PowerShell, Bash, Python tools to validate, fix, or automate investigation
+
+

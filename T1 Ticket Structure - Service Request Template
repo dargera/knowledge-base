@@ -1,0 +1,90 @@
+# Tier 1 Jira Ticket Structure - Service Request Template
+
+## Basic Information to Collect on the Call or Request
+
+| Jira Field      | What to Ask or Record                                        |
+|-----------------|--------------------------------------------------------------|
+| **Reporter**    | Requester’s full name (or select from directory if synced)   |
+| **Summary**     | Short, specific request title (e.g., “Request for Zoom License” or “New Monitor”) |
+| **Description** | Use the full call/request notes template below                |
+| **Priority**    | Based on urgency, ask: “Is this time-sensitive for your work?” |
+| **Assignee**    | Leave unassigned or assign to the appropriate fulfillment team/queue |
+| **Labels/Category** | Tags like software-request, hardware-request, access, new-hire, etc. |
+| **Attachments** | Ask the requester to provide forms, approvals, or screenshots (e.g., access matrix) |
+
+---
+
+## Description Field
+
+**Requester Name:** [Full Name]  
+**Contact Info:** [Phone / Email / Teams]  
+**Department/Location:** [e.g., Finance – Remote Edmonton]  
+**Requested By (if proxy):** [e.g., Manager on behalf of user]  
+
+---
+
+### Request Type
+
+- [ ] Software Installation or License  
+- [ ] Hardware/Peripheral Request  
+- [ ] New Hire/Onboarding Setup  
+- [ ] Account/Permission Access  
+- [ ] Shared Drive or Folder Access  
+- [ ] Email Group or Distribution List Update  
+- [ ] Other: `__________`
+
+---
+
+### Details of Request
+
+- **What is being requested?:**  
+- **Who is it for?:**  
+- **Why is it needed?:**  
+- **Urgency/Deadline:**  
+- **Has approval been provided?** (If yes, attach or note below)  
+
+---
+
+### System/Platform (if applicable)
+
+- [ ] Windows  
+- [ ] macOS  
+- [ ] VDI / Remote  
+- [ ] SaaS (e.g., Zoom, Slack, Salesforce)  
+- [ ] Internal App or Tool  
+
+---
+
+### Attachments Included
+
+- [ ] Approval email or screenshot  
+- [ ] Access matrix / form  
+- [ ] Screenshot of needed tool  
+- [ ] Purchase request  
+- [ ] Other: `__________`
+
+---
+
+### Initial Tier 1 Checks (if applicable)
+
+- [ ] Verified requester identity  
+- [ ] Confirmed existing access or lack thereof  
+- [ ] Checked inventory/system availability  
+- [ ] Confirmed approval (verbal or email)  
+- [ ] Directed requester to self-service portal (if available)  
+
+---
+
+### Next Steps / Notes for Fulfillment Team
+
+[e.g., “License needed before 5 PM Friday – user has manager approval in attached email.”]
+
+---
+
+## Common Tier 1 Requests and Initial Actions
+
+| Request Type        | Initial Tier 1 Actions                                       |
+|---------------------|-------------------------------------------------------------|
+| **Software Request** | Confirm need, check license availability, validate manager approval |
+| **Hardware/Peripheral** | Check inventory, confirm model/type needed, validate shipping address |
+| **Account Access**   | Confirm app/system, validate user’s access rights and ma

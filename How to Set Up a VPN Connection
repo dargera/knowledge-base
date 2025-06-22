@@ -1,0 +1,111 @@
+# VPN Setup Guide – Windows & macOS
+
+## Purpose
+
+This guide explains how to set up a secure VPN (Virtual Private Network) connection on **Windows** and **macOS** devices, enabling users to connect to the corporate network safely while working remotely.
+
+---
+
+## When to Use This Guide
+
+Use this guide if you are:
+
+- Working remotely and need access to internal systems or file shares  
+- Setting up a new laptop or replacing a previous VPN connection  
+- Experiencing connectivity issues and need to reconfigure the VPN  
+
+---
+
+## Requirements
+
+Before you begin, make sure you have:
+
+- A valid VPN account or credentials (usually your domain login)  
+- The VPN server address or hostname (provided by IT)  
+- Any required VPN software (e.g., Cisco AnyConnect, FortiClient, or built-in clients)  
+- Internet access  
+
+---
+
+## Setup for Windows 10/11 (Built-in VPN Client)
+
+### Step 1: Open VPN Settings
+
+- Click **Start** → **Settings** → **Network & Internet** → **VPN**  
+- Click **Add a VPN connection**
+
+### Step 2: Enter VPN Details
+
+- **VPN Provider:** Windows (built-in)  
+- **Connection Name:** [Company VPN]  
+- **Server Name or Address:** `[vpn.company.com]`  
+- **VPN Type:** L2TP/IPsec with pre-shared key *(or as directed by IT)*  
+- **Pre-shared Key:** `[provided by IT]`  
+- **Type of sign-in info:** Username and password  
+- **Username:** `your_domain\username`  
+- **Password:** `[your password]` *(optional — can be prompted each time)*  
+
+- Click **Save**
+
+### Step 3: Connect to VPN
+
+- Return to **VPN settings**  
+- Select your VPN and click **Connect**  
+- Enter your credentials if prompted  
+
+---
+
+## Setup for macOS (Built-in VPN)
+
+### Step 1: Open VPN Settings
+
+- Go to **System Settings** → **Network**  
+- Click the **"+"** button at the bottom left  
+- Set:  
+  - **Interface:** VPN  
+  - **VPN Type:** L2TP over IPSec *(or as directed)*  
+  - **Service Name:** `[Company VPN]`  
+- Click **Create**
+
+### Step 2: Configure VPN Settings
+
+- **Server Address:** `[vpn.company.com]`  
+- **Account Name:** `[your username]`  
+- Click **Authentication Settings…**  
+  - **Password:** `[your password]`  
+  - **Shared Secret:** `[pre-shared key from IT]`  
+- Click **Apply** → **Connect**
+
+---
+
+## If Using a VPN Client App (e.g., Cisco AnyConnect, FortiClient)
+
+1. Download and install the VPN client provided by IT  
+2. Open the application  
+3. Enter the VPN server address: `[vpn.company.com]`  
+4. Click **Connect**  
+5. Enter your credentials when prompted  
+6. You should see a confirmation or green icon when connected  
+
+---
+
+## Testing the VPN Connection
+
+Try accessing internal systems such as:
+
+- File shares: `\\fileserver\shared`  
+- Internal websites: `http://intranet.company.local`  
+- Outlook/Teams (for full functionality)  
+
+---
+
+## Troubleshooting Tips
+
+| **Issue**                    | **Try This**                                                           |
+|-----------------------------|------------------------------------------------------------------------|
+| Can’t connect               | Ensure internet is working; double-check the server name               |
+| Credentials not accepted   | Use full domain login: `domain\username`                               |
+| VPN connects but no access | Run `ipconfig /flushdns`; disconnect and reconnect the VPN             |
+| Frequent disconnects       | Switch Wi-Fi networks or restart the VPN software                      |
+
+---

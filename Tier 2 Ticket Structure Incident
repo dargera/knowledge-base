@@ -1,0 +1,106 @@
+Basic Information to Review / Update
+Jira Field
+What to Confirm or Update
+Reporter
+Confirm or update based on escalation notes
+Summary
+Keep clear and specific (e.g., “VPN reconnects fail after 2 minutes”)
+Description
+Update with detailed diagnostics and next steps (see template below)
+Priority
+Confirm based on impact/severity (may need to increase)
+Assignee
+Assign to the appropriate Tier 2 team or individual
+Labels/Category
+Expand labels for filtering and reporting (e.g., vpn, timeout, Cisco)
+Attachments
+Upload logs, Event Viewer errors, screenshots, and other relevant files.
+
+
+
+ Description Field 
+Basic Information
+
+Escalated By (Tier 1):[Name]  
+Original Caller Name: [Full Name]  
+Contact Info: [Phone / Email / Teams Handle]  
+Department/Location: [e.g., HR – Remote Toronto]  
+Device Type: [Laptop / Desktop / VDI / Mobile]  
+Operating System: [Windows / macOS / Other]  
+Asset Tag (if available): [e.g., A987654]  
+
+---
+
+Original Issue Summary (User's Words):  
+VPN disconnects after a few minutes of use.]
+
+---
+
+Updated Description & Findings:  
+Symptoms:
+When issue occurs:  
+Frequency/Pattern: 
+Affected software/system:
+Other users affected?: 
+Recent changes (patches, installs, config):
+
+---
+
+Error Details / Logs: 
+ Error Code / Message:  
+Screenshot / Event Viewer:  
+System Logs (attached):  
+
+---
+
+Troubleshooting Performed (Tier 2): 
+[ ] Verified network and firewall configuration  
+[ ] Reviewed system/application logs  
+[ ] Recreated issue in test environment  
+[ ] Performed network trace (Wireshark, etc.)  
+[ ] Verified Active Directory/group policy settings  
+[ ] Verified DNS, VPN, or routing settings  
+[ ] Checked permissions/access control  
+[ ] Coordinated with vendor or third-party tool  
+[ ] Other: `__________`
+
+---
+
+Root Cause (if found):  
+[e.g., “DNS misrouting due to VPN profile corruption”]
+
+---
+
+Fix Applied:  
+[e.g., “Deleted and recreated VPN profile with correct split-tunnel settings.”]
+
+---
+
+Is the issue resolved?  
+[ ] Yes – Confirmed with user  
+[ ] No – Escalated to Tier 3 / System Admin / Vendor
+
+---
+
+Notes for Next Team (if escalating):  
+[Include what has already been done and proposed next steps.]
+
+Tier 2 Troubleshooting Areas & Tools
+Category
+Tier 2 Tools & Checks
+Network/VPN
+Firewall rules, DNS lookups, VPN config, routing tables, packet capture
+Login/Auth
+AD logs, account policy, MFA issues, Kerberos token expiration
+Software Issues
+System logs, config files, crash reports, patch/version comparison
+Performance
+Resource monitoring, disk I/O, memory leaks, services, startup items
+Printing
+Spooler service, driver mismatch, network print queue access
+Email/Outlook
+OWA vs client tests, mailbox permissions, cache clearing, autodiscover logs
+Permissions
+File share ACLs, AD group membership, RBAC role checks
+
+
